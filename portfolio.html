@@ -1,1 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+/* Reset and base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f5f9; /* light gray-blue background */
+  color: #2e3a59; /* dark blue text */
+  scroll-behavior: smooth;
+}
 
+/* Header */
+header {
+  background-color: #dbe4f0;
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 2px solid #c1cbd7;
+}
+
+header h1 {
+  margin: 0;
+  color: #1b2a49;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  color: #3a4a6b;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #2e3a59;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #1a2033;
+}
+
+/* Sections */
+section {
+  padding: 3rem 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #1b2a49;
+}
+
+/* Skills */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.skill-category {
+  flex: 1 1 250px;
+}
+
+.skill-badges span {
+  display: inline-block;
+  background-color: #e4eaf4;
+  color: #1a2033;
+  padding: 0.4rem 0.8rem;
+  margin: 0.3rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* Experience */
+.timeline {
+  list-style: none;
+  padding-left: 0;
+}
+
+.timeline li {
+  margin-bottom: 1rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.timeline li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #3a4a6b;
+  font-size: 1.2rem;
+}
+
+/* Projects */
+.project {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-left: 5px solid #a0b3cc;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+.project h3 {
+  margin-top: 0;
+  color: #1b2a49;
+}
+
+.project p {
+  margin: 0.5rem 0 0 0;
+  color: #3a4a6b;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #dbe4f0;
+  color: #2e3a59 !important;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  
+  a {
+    color: #2e3a59 !important;
+  }
+}
+
+</style>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sedrak Mkrtchyan - Frontend Developer</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Sedrak Mkrtchyan</h1>
+    <p>Frontend Developer | Angular Specialist</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      Passionate and results-driven Frontend Developer with over 3.5 years of experience crafting beautiful and functional web applications using Angular. Known for my strong problem-solving skills and attention to detail, I love creating smooth user experiences that drive engagement.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3>Frameworks & Libraries</h3>
+        <div class="skill-badges">
+          <span>Angular (9-19)</span>
+          <span>NgRx</span>
+          <span>RxJS</span>
+          <span>Three.js</span>
+          <span>Cypress</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>Languages & Styling</h3>
+        <div class="skill-badges">
+          <span>TypeScript</span>
+          <span>HTML5</span>
+          <span>SCSS / CSS</span>
+          <span>Bootstrap</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Tools & Services</h3>
+        <div class="skill-badges">
+          <span>Git, GitHub, Bitbucket</span>
+          <span>RESTful API</span>
+          <span>i18n</span>
+          <span>Stripe</span>
+          <span>Jira</span>
+          <span>Azure DevOps</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2 class="section-title">Experience</h2>
+    <ul class="timeline">
+      <li><strong>Cisomate</strong> — Aug 2024 to Present</li>
+      <li><strong>Siemplify (Now part of Google Cloud)</strong> — March 2024 to Aug 2024</li>
+      <li><strong>Swatchbook</strong> — Dec 2023 to March 2024</li>
+      <li><strong>Clubforce</strong> — Dec 2022 to Dec 2023</li>
+      <li><strong>HR Tool</strong> — May 2022 to Dec 2022</li>
+      <li><strong>Jucari</strong> — Dec 2021 to May 2022</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project" id="project-cisomate">
+      <h3>Cisomate</h3>
+      <p>Cybersecurity governance platform helping CISOs track tasks and metrics. Worked on dynamic dashboards and role-based visibility.</p>
+      <h4>Responsibilities</h4>
+      <ul>
+        <li>Developed dynamic dashboards for real-time security metrics tracking and visualizations.</li>
+        <li>Implemented role-based visibility to ensure users see only the data relevant to their access level.</li>
+        <li>Optimized the user interface to support large volumes of security data.</li>
+        <li>Collaborated closely with security teams to ensure the platform met all the needs of CISO-level decision-makers.</li>
+        <li>Created and maintained reusable UI components to ensure scalability and ease of maintenance.</li>
+      </ul>
+    </div>
+
+    <div class="project" id="project-siemplify">
+      <h3>Siemplify (Now part of Google Cloud)</h3>
+      <p>Cybersecurity orchestration platform. Developed UI for automated threat detection workflows and incident response dashboards.</p>
+      <h4>Responsibilities</h4>
+      <ul>
+        <li>Developed and maintained web applications for the Siemplify platform, focused on creating a seamless user interface for security professionals.</li>
+        <li>Designed reusable front-end widgets that integrated with various security APIs to pull, display, and manage data.</li>
+        <li>Optimized front-end performance to handle large amounts of security data in real-time.</li>
+        <li>Collaborated with back-end engineers to ensure smooth integration of front-end components with security tools.</li>
+        <li>Implemented unit and integration tests to ensure code reliability and robustness.</li>
+        <li>Enhanced user interactions to make security operations more efficient and user-friendly.</li>
+      </ul>
+    </div>
+
+    <div class="project" id="project-swatchbook">
+      <h3>Swatchbook</h3>
+      <p>Material visualization tool used by fashion designers. Integrated 3D models and real-time swatch updates using Three.js.</p>
+      <h4>Responsibilities</h4>
+      <ul>
+        <li>Developed 3D visualization tools using Three.js to display fabrics in a dynamic and interactive way.</li>
+        <li>Integrated real-time swatch updates, allowing designers to preview changes instantly.</li>
+        <li>Designed intuitive user interfaces to enable easy navigation and swatch management.</li>
+        <li>Optimized the platform’s performance, ensuring smooth 3D rendering even with large swatch libraries.</li>
+        <li>Implemented mobile responsiveness for designers to manage their swatches on any device.</li>
+        <li>Collaborated with the design team to create a visually appealing and functional UI that mimicked real-world swatchbooks.</li>
+      </ul>
+    </div>
+
+    <div class="project" id="project-clubforce">
+      <h3>Clubforce</h3>
+      <p>Sports club management app. Worked on event scheduling, membership features, and mobile responsiveness.</p>
+      <h4>Responsibilities</h4>
+      <ul>
+        <li>Developed a platform to manage events, member subscriptions, and payments for sports clubs.</li>
+        <li>Integrated mobile responsiveness, ensuring users could easily access club information on their phones.</li>
+        <li>Built a dynamic event scheduling system allowing clubs to plan, organize, and update events.</li>
+        <li>Developed and maintained user authentication and authorization to ensure only authorized users could manage sensitive club data.</li>
+        <li>Implemented data visualization tools to help clubs track member participation and event statistics.</li>
+        <li>Optimized the platform’s performance for a smooth experience even during peak usage periods.</li>
+      </ul>
+    </div>
+
+    <div class="project" id="project-hrtool">
+      <h3>HR Tool</h3>
+      <p>Internal HR system with leave management, employee records, and role-based access. Focused on performance and scalability.</p>
+      <h4>Responsibilities</h4>
+      <ul>
+        <li>Developed and maintained web applications to handle employee records, leave requests, and role-based access control.</li>
+        <li>Implemented modular front-end components that could be reused across different sections of the HR tool.</li>
+        <li>Built a user-friendly dashboard for HR administrators to view and manage employee data.</li>
+        <li>Worked closely with HR teams to ensure the platform met all requirements for managing personnel and leave policies.</li>
+        <li>Optimized the application for scalability, ensuring it could grow alongside the company’s needs.</li>
+        <li>Created detailed reports and data visualizations to assist HR teams in decision-making.</li>
+        <li>Integrated real-time data updates to provide HR teams with the most accurate and up-to-date information.</li>
+      </ul>
+    </div>
+
+    <div class="project" id="project-jucari">
+      <h3>Jucari</h3>
+      <p>A dynamic platform for renting and managing toys. Built with Angular, integrated payments, and responsive UI.</p>
+      <h4>Responsibilities</h4>
+      <ul>
+        <li>Developed interactive web components for a dynamic toy rental marketplace using Angular and JavaScript.</li>
+        <li>Created a responsive UI to ensure users could easily navigate and interact with the platform on both desktop and mobile devices.</li>
+        <li>Integrated payment systems to handle rental transactions securely and efficiently.</li>
+        <li>Optimized user interface performance for quick load times and smooth transitions.</li>
+        <li>Collaborated with back-end teams to ensure accurate data handling for toy availability and rental history.</li>
+        <li>Built reusable UI components for managing toy listings and rental processes.</li>
+        <li>Ensured accessibility and usability for all users, including those with disabilities, by following WCAG guidelines.</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Sedrak Mkrtchyan</p>
+    <p><a href="https://www.linkedin.com/in/sedrak1/">Linkedin</a></p>
+  </footer>
+</body>
+</html>
